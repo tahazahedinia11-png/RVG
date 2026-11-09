@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>دوره‌های آموزشی · آموزشگاه رستگار</title>
+<meta name="description" content="بررسی دوره‌های مختلف آموزشگاه رستگار و انتخاب دوره مناسب">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css">
+<link rel="stylesheet" href="css/design-system.css">
+<link rel="stylesheet" href="css/desktop.css">
+<link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">رفتن به محتوای اصلی</a>
+
+<!-- Header -->
+<header class="header">
+  <nav class="navbar container">
+    <a href="index.html" class="logo">
+      <div class="logo-icon"><i class="ti ti-school"></i></div>
+      <div class="logo-text">آموزشگاه رستگار</div>
+    </a>
+
+    <ul class="nav-menu desktop-only">
+      <li><a href="index.html" class="nav-link">صفحه اصلی</a></li>
+      <li><a href="about.html" class="nav-link">درباره ما</a></li>
+      <li><a href="courses.html" class="nav-link active">دوره‌های آموزشی</a></li>
+      <li><a href="gallery.html" class="nav-link">گالری تصاویر</a></li>
+      <li><a href="contact.html" class="nav-link">تماس با ما</a></li>
+    </ul>
+
+    <div class="nav-cta desktop-only">
+      <a href="registration.html" class="btn btn-secondary btn-lg">ثبت‌نام</a>
+    </div>
+
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="باز کردن منو">
+      <span></span>
+    </button>
+  </nav>
+</header>
+
+<!-- Mobile Navigation Drawer -->
+<div class="mobile-overlay" id="mobileOverlay"></div>
+<div class="mobile-nav-drawer" id="mobileNavDrawer">
+  <div class="mobile-nav-header">
+    <div class="mobile-nav-logo">
+      <div class="logo-icon" style="width:28px;height:28px;font-size:var(--font-size-lg);"><i class="ti ti-school"></i></div>
+      <div>آموزشگاه رستگار</div>
+    </div>
+    <button class="mobile-nav-close" id="mobileNavClose" aria-label="بستن منو"><i class="ti ti-x"></i></button>
+  </div>
+  <ul class="mobile-nav-menu">
+    <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link"><i class="ti ti-home"></i>صفحه اصلی</a></li>
+    <li class="mobile-nav-item"><a href="about.html" class="mobile-nav-link"><i class="ti ti-info-circle"></i>درباره ما</a></li>
+    <li class="mobile-nav-item"><a href="courses.html" class="mobile-nav-link active"><i class="ti ti-book-open"></i>دوره‌های آموزشی</a></li>
+    <li class="mobile-nav-item"><a href="gallery.html" class="mobile-nav-link"><i class="ti ti-image"></i>گالری تصاویر</a></li>
+    <li class="mobile-nav-item"><a href="contact.html" class="mobile-nav-link"><i class="ti ti-phone"></i>تماس با ما</a></li>
+  </ul>
+  <div class="mobile-nav-cta">
+    <a href="registration.html" class="btn btn-secondary">ثبت‌نام آنلاین</a>
+  </div>
+</div>
+
+<main id="main-content">
+
+  <!-- Page Header -->
+  <section class="about-hero" style="background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-secondary-dark) 100%);">
+    <div class="container">
+      <h1>دوره‌های آموزشی</h1>
+      <p>دنیایی از فرصت‌های یادگیری در آموزشگاه رستگار</p>
+    </div>
+  </section>
+
+  <!-- Course Categories -->
+  <section class="section">
+    <div class="container">
+      <div class="course-grid">
+
+        <!-- زبان و ادبیات -->
+        <div class="course-card reveal stagger-1">
+          <div class="course-image">
+            <span class="course-category-badge">زبان و ادبیات</span>
+            <img src="https://images.unsplash.com/photo-1544717330-2647a3f3e9e0?w=400&q=80" alt="آموزش زبان انگلیسی">
+          </div>
+          <div class="course-info">
+            <h3 class="course-title">آموزش زبان انگلیسی از سطح مبتدی تا پیشرفته</h3>
+            <p class="course-excerpt">یادگیری زبان انگلیسی با مدرسین مجرب و ارائه مدرک معتبر با ذکر مرجع صادرکننده.</p>
+            <div class="course-meta">
+              <span class="course-age"><i class="ti ti-user"></i> همه سنین</span>
+            </div>
+            <div class="course-actions">
+              <a href="course-detail.html?course=english" class="btn btn-outline btn-sm">جزئیات دوره</a>
+              <a href="registration.html?course=english" class="btn btn-primary btn-sm">ثبت‌نام</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card reveal stagger-2">
+          <div class="course-image">
+            <span class="course-category-badge">زبان و ادبیات</span>
+            <img src="https://images.unsplash.com/photo-1533234232224-3d27e9647215?w=400&q=80" alt="آموزش زبان فارسی">
+          </div>
+          <div class="course-info">
+            <h3 class="course-title">آموزش زبان فارسی</h3>
+            <p class="course-excerpt">آموزش زبان فارسی برای هنرجویان مختلف سنین با رویکرد کاربردی.</p>
+            <div class="course-meta">
+              <span class="course-age"><i class="ti ti-user"></i> همه سنین</span>
+            </div>
+            <div class="course-actions">
+              <a href="course-detail.html?course=persian" class="btn btn-outline btn-sm">جزئیات دوره</a>
+              <a href="registration.html?course=persian" class="btn btn-primary btn-sm">ثبت‌نام</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- دروس مدرسه -->
+        <div class="course-card reveal stagger-3">
+          <div class="course-image">
+            <span class="course-category-badge">دروس مدرسه</span>
+            <img src="https://images.unsplash.com/photo-1523240795622-92f9b289f7e1?w=400&q=80" alt="ریاضی ابتدایی">
+          </div>
+          <div class="course-info">
+            <h3 class="course-title">ریاضی ابتدایی</h3>
+            <p class="course-excerpt">آموزش مبانی ریاضی برای دانش‌آموزان ابتدایی با روش‌های نوین.</p>
+            <div class="course-meta">
+              <span class="course-age"><i class="ti ti-user"></i> ۶ تا ۱۱ سال</span>
+            </div>
+            <div class="course-actions">
+              <a href="course-detail.html?course=math-elem" class="btn btn-outline btn-sm">جزئیات دوره</a>
+              <a href="registration.html?course=math-elem" class="btn btn-primary btn-sm">ثبت‌نام</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card reveal stagger-4">
+          <div class="course-image">
+            <span class="course-category-badge">دروس مدرسه</span>
+            <img src="https://images.unsplash.com/photo-1509062522248-10a3777e7e02?w=400&q=80" alt="ریاضی متوسطه">
+          </div>
+          <div class="course-info">
+            <h3 class="course-title">ریاضی متوسطه اول و دوم</h3>
+            <p class="course-excerpt">آموزش ریاضی در مقاطع متوسطه اول و متوسطه دوم دبیرستان.</p>
+            <div class="course-meta">
+              <span class="course-age"><i class="ti ti-user"></i> ۱۲ تا ۱۸ سال</span>
+            </div>
+            <div class="course-actions">
+              <a href="course-detail.html?course=math-high" class="btn btn-outline btn-sm">جزئیات دوره</a>
+              <a href="registration.html?course=math-high" class="btn btn-primary btn-sm">ثبت‌نام</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card reveal stagger-1">
+          <div class="course-image">
+            <span class="course-category-badge">دروس مدرسه</span>
+            <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abdac?w=400&q=80" alt="آموزش عربی">
+          </div>
+          <div class="course-info">
+            <h3 class="course-title">آموزش زبان عربی</h3>
+            <p class="course-excerpt">آموزش زبان عربی با رویکرد کاربردی و 대화.</p>
+            <div class="course-meta">
+              <span class="course-age"><i class="ti ti-user"></i> همه سنین</span>
+            </div>
+            <div class="course-actions">
+              <a href="course-detail.html?course=arabic" class="btn btn-outline btn-sm">جزئیات دوره</a>
+              <a href="registration.html?course=arabic" class="btn btn-primary btn-sm">ثبت‌نام</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card reveal stagger-2">
+          <div class="course-image">
+            <span class="course-category-badge">دروس مدرسه</span>
+            <img src="https://images.unsplash.com/photo-1625985731868-6e26742a563d?w=400&q=80" alt="آموزش فیزیک">
+          </div>
+          <div class="course-info">
+            <h3 class="course-title">آموزش فیزیک</h3>
+            <p class="course-excerpt">آموزش مفاهیم فیزیک برای دانش‌آموزان متوسطه و دبیرستان.</p>
+            <div class="course-meta">
+              <span class="course-age"><i class="ti ti-user"></i> ۱۴ تا ۱۸ سال</span>
+            </div>
+            <div class="course-actions">
+              <a href="course-detail.html?course=physics" class="btn btn-outline btn-sm">جزئیات دوره</a>
+              <a href="registration.html?course=physics" class="btn btn-primary btn-sm">ثبت‌نام</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card reveal stagger-3">
+          <div class="course-image">
+            <span class="course-category-badge">دروس مدرسه</span>
+            <img src="https://images.unsplash.com/photo-1532243743370-57470e58b0d8?w=400&q=80" alt="آموزش شیمی">
+          </div>
+          <div class="course-info">
+            <h3 class="course-title">آموزش شیمی</h3>
+            <p class="course-excerpt">آموزش مفاهیم شیمی و تجربیات laboratorio برای دانش‌آموزان.</p>
+            <div class="course-meta">
+              <span class="course-age"><i class="ti ti-user"></i> ۱۴ تا ۱۸ سال</span>
+            </div>
+            <div class="course-actions">
+              <a href="course-detail.html?course=chemistry" class="btn btn-outline btn-sm">جزئیات دوره</a>
+              <a href="registration.html?course=chemistry" class="btn btn-primary btn-sm">ثبت‌نام</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- آموزش ویژه -->
+        <div class="course-card reveal stagger-4">
+          <div class="course-image">
+            <span class="course-category-badge">آموزش ویژه</span>
+            <img src="https://images.unsplash.com/photo-1522689955740-e4ce2906c41c?w=400&q=80" alt="آموزش فارسی ویژه">
+          </div>
+          <div class="course-info">
+            <h3 class="course-title">آموزش فارسی ویژه اختلالات یادگیری</h3>
+            <p class="course-excerpt">آموزش تخصصی فارسی برای هنرجویان با اختلالات یادشی.</p>
+            <div class="course-meta">
+              <span class="course-age"><i class="ti ti-user"></i> همه سنین</span>
+            </div>
+            <div class="course-actions">
+              <a href="course-detail.html?course=persian-special" class="btn btn-outline btn-sm">جزئیات دوره</a>
+              <a href="registration.html?course=persian-special" class="btn btn-primary btn-sm">ثبت‌نام</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card reveal stagger-1">
+          <div class="course-image">
+            <span class="course-category-badge">آموزش ویژه</span>
+            <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abdac?w=400&q=80" alt="آموزش ریاضی ویژه">
+          </div>
+          <div class="course-info">
+            <h3 class="course-title">آموزش ریاضی ویژه اختلالات یادگیری</h3>
+            <p class="course-excerpt">آموزش تخصصی ریاضی برای هنرجویان با اختلالات یادشی.</p>
+            <div class="course-meta">
+              <span class="course-age"><i class="ti ti-user"></i> همه سنین</span>
+            </div>
+            <div class="course-actions">
+              <a href="course-detail.html?course=math-special" class="btn btn-outline btn-sm">جزئیات دوره</a>
+              <a href="registration.html?course=math-special" class="btn btn-primary btn-sm">ثبت‌نام</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- هنر و خلاقیت -->
+        <div class="course-card reveal stagger-2">
+          <div class="course-image">
+            <span class="course-category-badge">هنر و خلاقیت</span>
+            <img src="https://images.unsplash.com/photo-1579783903743-ab52930e662b?w=400&q=80" alt="کلاس نقاشی">
+          </div>
+          <div class="course-info">
+            <h3 class="course-title">نقاشی</h3>
+            <p class="course-excerpt">آموزش تکنیک‌های نقاشی و پرورش خلاقیت هنرجوان.</p>
+            <div class="course-meta">
+              <span class="course-age"><i class="ti ti-user"></i> ۷ سال به بالا</span>
+            </div>
+            <div class="course-actions">
+              <a href="course-detail.html?course=painting" class="btn btn-outline btn-sm">جزئیات دوره</a>
+              <a href="registration.html?course=painting" class="btn btn-primary btn-sm">ثبت‌نام</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card reveal stagger-3">
+          <div class="course-image">
+            <span class="course-category-badge">هنر و خلاقیت</span>
+            <img src="https://images.unsplash.com/photo-1617700814114-5776508e0673?w=400&q=80" alt="کلاس طراحی">
+          </div>
+          <div class="course-info">
+            <h3 class="course-title">طراحی</h3>
+            <p class="course-excerpt">آموزش طراحی و گرافیک با ابزارهای مدرن.</p>
+            <div class="course-meta">
+              <span class="course-age"><i class="ti ti-user"></i> ۱۲ سال به بالا</span>
+            </div>
+            <div class="course-actions">
+              <a href="course-detail.html?course=design" class="btn btn-outline btn-sm">جزئیات دوره</a>
+              <a href="registration.html?course=design" class="btn btn-primary btn-sm">ثبت‌نام</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card reveal stagger-4">
+          <div class="course-image">
+            <span class="course-category-badge">هنر و خلاقیت</span>
+            <img src="https://images.unsplash.com/photo-1616575133840-f33072aa5e00?w=400&q=80" alt="کلاس خوشنویسی">
+          </div>
+          <div class="course-info">
+            <h3 class="course-title">خوشنویسی</h3>
+            <p class="course-excerpt">آموزش خوشنویسی-IRANIC وoutlined Techniques.</p>
+            <div class="course-meta">
+              <span class="course-age"><i class="ti ti-user"></i> ۸ سال به بالا</span>
+            </div>
+            <div class="course-actions">
+              <a href="course-detail.html?course=calligraphy" class="btn btn-outline btn-sm">جزئیات دوره</a>
+              <a href="registration.html?course=calligraphy" class="btn btn-primary btn-sm">ثبت‌نام</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- آموزش کودکان -->
+        <div class="course-card reveal stagger-1">
+          <div class="course-image">
+            <span class="course-category-badge">آموزش کودکان</span>
+            <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abdac?w=400&q=80" alt="مهدکودک">
+          </div>
+          <div class="course-info">
+            <h3 class="course-title">مهدکودک</h3>
+            <p class="course-excerpt">آموزش و پرورش کودک در محیطی امن و صمیمی.</p>
+            <div class="course-meta">
+              <span class="course-age"><i class="ti ti-user"></i> ۳ تا ۶ سال</span>
+            </div>
+            <div class="course-actions">
+              <a href="course-detail.html?course=kinder" class="btn btn-outline btn-sm">جزئیات دوره</a>
+              <a href="registration.html?course=kinder" class="btn btn-primary btn-sm">ثبت‌نام</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card reveal stagger-2">
+          <div class="course-image">
+            <span class="course-category-badge">آموزش کودکان</span>
+            <img src="https://images.unsplash.com/photo-1544717330-2647a3f3e9e0?w=400&q=80" alt="پیش دبستان">
+          </div>
+          <div class="course-info">
+            <h3 class="course-title">دوره پیش از دبستان</h3>
+            <p class="course-excerpt">آموزش‌های پیشlementary برای ورود به دبستان.</p>
+            <div class="course-meta">
+              <span class="course-age"><i class="ti ti-user"></i> ۵ تا ۷ سال</span>
+            </div>
+            <div class="course-actions">
+              <a href="course-detail.html?course=pre-school" class="btn btn-outline btn-sm">جزئیات دوره</a>
+              <a href="registration.html?course=pre-school" class="btn btn-primary btn-sm">ثبت‌نام</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- مهارت‌های نوین -->
+        <div class="course-card reveal stagger-3">
+          <div class="course-image">
+            <span class="course-category-badge">مهارت‌های نوین</span>
+            <img src="https://images.unsplash.com/photo-1535238088117-921ff0b56e48?w=400&q=80" alt="کلاس چرتکه">
+          </div>
+          <div class="course-info">
+            <h3 class="course-title">کلاس چرتکه</h3>
+            <p class="course-excerpt">آموزش چرتکه و مهارت‌های 손 interesante.</p>
+            <div class="course-meta">
+              <span class="course-age"><i class="ti ti-user"></i> ۸ تا ۱۶ سال</span>
+            </div>
+            <div class="course-actions">
+              <a href="course-detail.html?course=chess" class="btn btn-outline btn-sm">جزئیات دوره</a>
+              <a href="registration.html?course=chess" class="btn btn-primary btn-sm">ثبت‌نام</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card reveal stagger-4">
+          <div class="course-image">
+            <span class="course-category-badge">مهارت‌های نوین</span>
+            <img src="https://images.unsplash.com/photo-1535238088117-921ff0b56e48?w=400&q=80" alt="کلاس رباتیک">
+          </div>
+          <div class="course-info">
+            <h3 class="course-title">کلاس رباتیک</h3>
+            <p class="course-excerpt">آموزش برنامه‌نویسی، مهندسی و ساخت ربات با ابزارهای آموزشی جدید.</p>
+            <div class="course-meta">
+              <span class="course-age"><i class="ti ti-user"></i> ۸ تا ۱۶ سال</span>
+            </div>
+            <div class="course-actions">
+              <a href="course-detail.html?course=robotics" class="btn btn-outline btn-sm">جزئیات دوره</a>
+              <a href="registration.html?course=robotics" class="btn btn-primary btn-sm">ثبت‌نام</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- رشد فردی و فرهنگی -->
+        <div class="course-card reveal stagger-1">
+          <div class="course-image">
+            <span class="course-category-badge">رشد فردی و فرهنگی</span>
+            <img src="https://images.unsplash.com/photo-1517197189296-5ec2908a3f35?w=400&q=80" alt="خودشناسی با مولانا">
+          </div>
+          <div class="course-info">
+            <h3 class="course-title">خودشناسی با آموزه‌های مولانا</h3>
+            <p class="course-excerpt">آموزش خودشناسی و灵 development با آموزه‌های مولانا.</p>
+            <div class="course-meta">
+              <span class="course-age"><i class="ti ti-user"></i> ۱۶ سال به بالا</span>
+            </div>
+            <div class="course-actions">
+              <a href="course-detail.html?course=rumi" class="btn btn-outline btn-sm">جزئیات دوره</a>
+              <a href="registration.html?course=rumi" class="btn btn-primary btn-sm">ثبت‌نام</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- آموزش قرآن -->
+        <div class="course-card reveal stagger-2">
+          <div class="course-image">
+            <span class="course-category-badge">آموزش قرآن</span>
+            <img src="https://images.unsplash.com/photo-1517197189296-5ec2908a3f35?w=400&q=80" alt="قرآن‌خوانی">
+          </div>
+          <div class="course-info">
+            <h3 class="course-title">قرآن‌خوانی، روخوانی و تجوید</h3>
+            <p class="course-excerpt">آموزش صحیح قراءة قرآن کریم با تأکید بر قوانین تجوید و روخوانی.</p>
+            <div class="course-meta">
+              <span class="course-age"><i class="ti ti-user"></i> همه سنین</span>
+            </div>
+            <div class="course-actions">
+              <a href="course-detail.html?course=quran" class="btn btn-outline btn-sm">جزئیات دوره</a>
+              <a href="registration.html?course=quran" class="btn btn-primary btn-sm">ثبت‌نام</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mb-8">
+        <a href="registration.html" class="btn btn-secondary btn-lg">ثبت‌نام در دوره مورد نظر</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo" style="color:#FFFFFF;">
+          <div class="logo-icon" style="background-color:#FFFFFF;color:var(--color-primary);"><i class="ti ti-school"></i></div>
+          <div class="logo-text">آموزشگاه رستگار</div>
+        </div>
+        <p class="footer-desc">محیطی امن، صمیمی و حرفه‌ای برای یادگیری، رشد فردی و پرورش توانایی‌های شما.</p>
+      </div>
+      <div class="footer-links-column">
+        <h3 class="footer-title">لینک‌های سریع</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">صفحه اصلی</a></li>
+          <li><a href="about.html">درباره ما</a></li>
+          <li><a href="gallery.html">گالری تصاویر</a></li>
+          <li><a href="contact.html">تماس با ما</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-column">
+        <h3 class="footer-title">دسته‌بندی دوره‌ها</h3>
+        <ul class="footer-links">
+          <li><a href="#">زبان و ادبیات</a></li>
+          <li><a href="#">دروس مدرسه</a></li>
+          <li><a href="#">آموزش ویژه</a></li>
+          <li><a href="#">هنر و خلاقیت</a></li>
+          <li><a href="#">آموزش کودکان</a></li>
+          <li><a href="#">مهارت‌های نوین</a></li>
+          <li><a href="#">رشد فردی و فرهنگی</a></li>
+          <li><a href="#">آموزش قرآن</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact-column">
+        <h3 class="footer-title">اطلاعات تماس</h3>
+        <ul class="footer-contact">
+          <li><i class="ti ti-map-pin"></i> شهریار، اندیشه، فاز یک، خیابان دنیامالی، کوچه گلنوش</li>
+          <li><i class="ti ti-phone"></i> شماره تماس (جایگزین با شماره واقعی)</li>
+          <li><i class="ti ti-clock"></i> ساعات کاری: اطلاعات قابل تکمیل</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© ۲۰۲۵ آموزشگاه رستگار. کلیه حقوق مادی و معنوی برای آموزشگاه رستگار محفوظ است.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

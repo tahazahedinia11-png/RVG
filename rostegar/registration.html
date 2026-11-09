@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ثبت‌نام آنلاین · آموزشگاه رستگار</title>
+<meta name="description" content="فرم ثبت‌نام آنلاین آموزشگاه رستگار">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css">
+<link rel="stylesheet" href="css/design-system.css">
+<link rel="stylesheet" href="css/desktop.css">
+<link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">رفتن به محتوای اصلی</a>
+
+<!-- Header -->
+<header class="header">
+  <nav class="navbar container">
+    <a href="index.html" class="logo">
+      <div class="logo-icon"><i class="ti ti-school"></i></div>
+      <div class="logo-text">آموزشگاه رستگار</div>
+    </a>
+
+    <ul class="nav-menu desktop-only">
+      <li><a href="index.html" class="nav-link">صفحه اصلی</a></li>
+      <li><a href="about.html" class="nav-link">درباره ما</a></li>
+      <li><a href="courses.html" class="nav-link">دوره‌های آموزشی</a></li>
+      <li><a href="gallery.html" class="nav-link">گالری تصاویر</a></li>
+      <li><a href="contact.html" class="nav-link">تماس با ما</a></li>
+    </ul>
+
+    <div class="nav-cta desktop-only">
+      <a href="registration.html" class="btn btn-secondary btn-lg active">ثبت‌نام</a>
+    </div>
+
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="باز کردن منو">
+      <span></span>
+    </button>
+  </nav>
+</header>
+
+<!-- Mobile Navigation Drawer -->
+<div class="mobile-overlay" id="mobileOverlay"></div>
+<div class="mobile-nav-drawer" id="mobileNavDrawer">
+  <div class="mobile-nav-header">
+    <div class="mobile-nav-logo">
+      <div class="logo-icon" style="width:28px;height:28px;font-size:var(--font-size-lg);"><i class="ti ti-school"></i></div>
+      <div>آموزشگاه رستگار</div>
+    </div>
+    <button class="mobile-nav-close" id="mobileNavClose" aria-label="بستن منو"><i class="ti ti-x"></i></button>
+  </div>
+  <ul class="mobile-nav-menu">
+    <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link"><i class="ti ti-home"></i>صفحه اصلی</a></li>
+    <li class="mobile-nav-item"><a href="about.html" class="mobile-nav-link"><i class="ti ti-info-circle"></i>درباره ما</a></li>
+    <li class="mobile-nav-item"><a href="courses.html" class="mobile-nav-link"><i class="ti ti-book-open"></i>دوره‌های آموزشی</a></li>
+    <li class="mobile-nav-item"><a href="gallery.html" class="mobile-nav-link"><i class="ti ti-image"></i>گالری تصاویر</a></li>
+    <li class="mobile-nav-item"><a href="contact.html" class="mobile-nav-link"><i class="ti ti-phone"></i>تماس با ما</a></li>
+  </ul>
+  <div class="mobile-nav-cta">
+    <a href="registration.html" class="btn btn-secondary">ثبت‌نام آنلاین</a>
+  </div>
+</div>
+
+<main id="main-content">
+
+  <!-- Page Header -->
+  <section class="about-hero">
+    <div class="container">
+      <h1>ثبت‌نام آنلاین</h1>
+      <p>درخواست ثبت‌نام در دوره‌های آموزشی آموزشگاه رستگار</p>
+    </div>
+  </section>
+
+  <!-- Registration Form -->
+  <section class="section-lg">
+    <div class="container">
+      <div class="registration-layout">
+
+        <!-- Form -->
+        <div class="registration-form-card">
+          <h2 class="section-title mb-6" style="font-size: var(--font-size-2xl); text-align: right;">فرم ثبت‌نام</h2>
+          <form id="registrationForm" novalidate>
+            <div class="form-group">
+              <label class="form-label">نام و نام خانوادگی <span style="color:var(--color-secondary)">*</span></label>
+              <input type="text" class="form-input" name="fullName" placeholder="نام و نام خانوادگی را وارد کنید" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">شماره تماس <span style="color:var(--color-secondary)">*</span></label>
+              <input type="tel" class="form-input" name="phone" placeholder="۰۹۱۲۳۴۵۶۷۸۹" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">سن هنرجو <span style="color:var(--color-secondary)">*</span></label>
+              <input type="number" class="form-input" name="age" placeholder="سن هنرجو" min="1" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">دوره موردنظر <span style="color:var(--color-secondary)">*</span></label>
+              <select class="form-select" name="course" required>
+                <option value="">انتخاب دوره</option>
+                <option value="english">آموزش زبان انگلیسی از سطح مبتدی تا پیشرفته</option>
+                <option value="persian">آموزش زبان فارسی</option>
+                <option value="math-elem">ریاضی ابتدایی</option>
+                <option value="math-high">ریاضی متوسطه اول و دوم</option>
+                <option value="arabic">آموزش زبان عربی</option>
+                <option value="physics">آموزش فیزیک</option>
+                <option value="chemistry">آموزش شیمی</option>
+                <option value="persian-special">آموزش فارسی ویژه اختلالات یادگیری</option>
+                <option value="math-special">آموزش ریاضی ویژه اختلالات یادگیری</option>
+                <option value="painting">نقاشی</option>
+                <option value="design">طراحی</option>
+                <option value="calligraphy">خوشنویسی</option>
+                <option value="kinder">مهدکودک</option>
+                <option value="pre-school">دوره پیش از دبستان</option>
+                <option value="chess">کلاس چرتکه</option>
+                <option value="robotics">کلاس رباتیک</option>
+                <option value="rumi">خودشناسی با آموزه‌های مولانا</option>
+                <option value="quran">قرآن‌خوانی، روخوانی و تجوید</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">مقطع تحصیلی</label>
+              <select class="form-select" name="educationLevel">
+                <option value="">انتخاب مقطع تحصیلی</option>
+                <option value="pre-school">پیش دبستان</option>
+                <option value="elementary">ابتدایی</option>
+                <option value="middle">متوسطه اول</option>
+                <option value="high">متوسطه دوم</option>
+                <option value="diploma">دیپلم</option>
+                <option value="university"> دانشگاه</option>
+                <option value="adult">بزرگسال</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">توضیحات تکمیلی</label>
+              <textarea class="form-textarea" name="notes" placeholder="هرگونه توضیح تکمیلی..." rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full btn-lg">ارسال درخواست ثبت‌نام</button>
+          </form>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="course-detail-sidebar">
+          <div class="info-card">
+            <h3 class="info-card-title">راهنمای ثبت‌نام</h3>
+            <p style="color: var(--color-text-secondary); line-height: var(--leading-relaxed); margin-bottom: var(--space-4);">
+              لطفاً تمام فیلدها را به‌طور کامل و دقیق پر کنید. پس از ارسال درخواست، تیم ما با شما تماس خواهند گرفت.
+            </p>
+            <div class="info-item" style="color: var(--color-text-secondary);">
+              <i class="ti ti-clock"></i> پاسخگویی در غضون ۲۴ ساعت
+            </div>
+            <div class="info-item" style="color: var(--color-text-secondary);">
+              <i class="ti ti-phone"></i> تماس از طریق تلفن یا واتساپ
+            </div>
+            <div class="info-item" style="color: var(--color-text-secondary);">
+              <i class="ti ti-mail"></i> تاییدیه از طریق پیامک
+            </div>
+          </div>
+
+          <div class="info-card" style="background-color: var(--color-bg-alt); border-color: var(--color-secondary);">
+            <h3 class="info-card-title" style="color: var(--color-secondary);">دوره‌های محبوب</h3>
+            <ul style="list-style: none; color: var(--color-text-secondary);">
+              <li style="margin-bottom: var(--space-2);">آموزش زبان انگلیسی</li>
+              <li style="margin-bottom: var(--space-2);">ریاضی مقاطع مختلف</td>
+              <li style="margin-bottom: var(--space-2);">کلاس رباتیک</li>
+              <li style="margin-bottom: var(--space-2);">قرآن‌خوانی و تجوید</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Confirmation Modal -->
+<div class="modal-overlay" id="confirmationModal">
+  <div class="modal">
+    <div class="modal-header">
+      <h3 class="modal-title">ثبت‌نام با موفقیت ثبت شد</h3>
+      <button class="modal-close" id="closeModal"><i class="ti ti-x"></i></button>
+    </div>
+    <div class="modal-body" style="text-align: center;">
+      <div style="font-size: 48px; margin-bottom: var(--space-4);">✓</div>
+      <p style="color: var(--color-primary); font-weight: 600; margin-bottom: var(--space-4);">
+        درخواست ثبت‌نام شما با موفقیت ثبت شد.
+      </p>
+      <p style="color: var(--color-text-secondary); margin-bottom: var(--space-6);">
+        تیم ما در أقرب فرصت با شما تماس خواهند گرفت.
+      </p>
+      <button class="btn btn-primary btn-full" id="closeModalBtn">بستن</button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo" style="color:#FFFFFF;">
+          <div class="logo-icon" style="background-color:#FFFFFF;color:var(--color-primary);"><i class="ti ti-school"></i></div>
+          <div class="logo-text">آموزشگاه رستگار</div>
+        </div>
+        <p class="footer-desc">محیطی امن، صمیمی و حرفه‌ای برای یادگیری، رشد فردی و پرورش توانایی‌های شما.</p>
+      </div>
+      <div class="footer-links-column">
+        <h3 class="footer-title">لینک‌های سریع</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">صفحه اصلی</a></li>
+          <li><a href="courses.html">دوره‌های آموزشی</a></li>
+          <li><a href="contact.html">تماس با ما</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact-column">
+        <h3 class="footer-title">اطلاعات تماس</h3>
+        <ul class="footer-contact">
+          <li><i class="ti ti-map-pin"></i> شهریار، اندیشه، فاز یک، خیابان دنیامالی، کوچه گلنوش</li>
+          <li><i class="ti ti-phone"></i> شماره تماس (جایگزین با شماره واقعی)</li>
+          <li><i class="ti ti-clock"></i> ساعات کاری: اطلاعات قابل تکمیل</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© ۲۰۲۵ آموزشگاه رستگار. کلیه حقوق مادی و معنوی برای آموزشگاه رستگار محفوظ است.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  document.getElementById('registrationForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    document.getElementById('confirmationModal').classList.add('open');
+  });
+
+  document.getElementById('closeModal').addEventListener('click', function() {
+    document.getElementById('confirmationModal').classList.remove('open');
+  });
+
+  document.getElementById('closeModalBtn').addEventListener('click', function() {
+    document.getElementById('confirmationModal').classList.remove('open');
+    document.getElementById('registrationForm').reset();
+  });
+
+  document.getElementById('mobileOverlay').addEventListener('click', function() {
+    document.getElementById('confirmationModal').classList.remove('open');
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,596 @@
+/* ==========================================================================
+   ROSTEGAR ACADEMY - MOBILE LAYOUT (below 768px)
+   Independent mobile-first design - not a shrunken desktop version
+   ========================================================================== */
+
+@media (max-width: 767px) {
+
+  /* ── Mobile Base ── */
+  html {
+    font-size: 14px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    padding: 0 var(--space-4);
+  }
+
+  .section {
+    padding: var(--space-10) 0;
+  }
+
+  .section-lg {
+    padding: var(--space-12) 0;
+  }
+
+  /* ── Mobile Header ── */
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: var(--z-sticky);
+  }
+
+  .navbar {
+    height: 56px;
+    padding: 0 var(--space-4);
+    position: relative;
+  }
+
+  .logo {
+    font-size: var(--font-size-xl);
+    gap: var(--space-2);
+    z-index: var(--z-popover);
+    position: relative;
+  }
+
+  .logo-icon {
+    width: 32px;
+    height: 32px;
+    font-size: var(--font-size-lg);
+  }
+
+  /* Hamburger Menu */
+  .mobile-menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: var(--z-popover);
+    position: relative;
+    color: var(--color-primary);
+  }
+
+  .mobile-menu-toggle span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: var(--color-primary);
+    border-radius: 2px;
+    position: relative;
+    transition: background var(--transition-fast);
+  }
+
+  .mobile-menu-toggle span::before,
+  .mobile-menu-toggle span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background-color: var(--color-primary);
+    border-radius: 2px;
+    transition: all var(--transition-fast);
+  }
+
+  .mobile-menu-toggle span::before { top: -6px; }
+  .mobile-menu-toggle span::after { top: 6px; }
+
+  .mobile-menu-toggle.active span {
+    background-color: transparent;
+  }
+
+  .mobile-menu-toggle.active span::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  .mobile-menu-toggle.active span::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+
+  /* Mobile Navigation Drawer */
+  .mobile-nav-drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 280px;
+    height: 100vh;
+    background-color: var(--color-surface);
+    z-index: var(--z-modal);
+    transform: translateX(100%);
+    transition: transform var(--transition-bounce);
+    box-shadow: -10px 0 30px -10px rgba(35, 75, 59, 0.15);
+    border-left: 1px solid rgba(35, 75, 59, 0.06);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-nav-drawer.open {
+    transform: translateX(0);
+  }
+
+  .mobile-nav-header {
+    padding: var(--space-5);
+    border-bottom: 1px solid rgba(35, 75, 59, 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .mobile-nav-logo {
+    font-size: var(--font-size-lg);
+    font-weight: 800;
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
+  .mobile-nav-close {
+    background: none;
+    border: none;
+    font-size: var(--font-size-lg);
+    color: var(--color-text-light);
+    cursor: pointer;
+    padding: var(--space-2);
+  }
+
+  .mobile-nav-menu {
+    list-style: none;
+    padding: var(--space-5);
+    flex: 1;
+  }
+
+  .mobile-nav-item {
+    margin-bottom: var(--space-2);
+  }
+
+  .mobile-nav-link {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-3) var(--space-4);
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    border-radius: var(--radius-lg);
+    transition: all var(--transition-fast);
+    white-space: nowrap;
+  }
+
+  .mobile-nav-link:hover,
+  .mobile-nav-link.active {
+    color: var(--color-primary);
+    background-color: rgba(35, 75, 59, 0.05);
+  }
+
+  .mobile-nav-cta {
+    padding: var(--space-5);
+    border-top: 1px solid rgba(35, 75, 59, 0.06);
+  }
+
+  .mobile-nav-cta .btn {
+    width: 100%;
+    padding: var(--space-4);
+    font-size: var(--font-size-base);
+  }
+
+  /* Mobile Overlay */
+  .mobile-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: var(--z-modal - 1);
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2px);
+    display: none;
+  }
+
+  .mobile-overlay.open {
+    display: block;
+  }
+
+  /* Hide desktop-only elements on mobile */
+  .desktop-only {
+    display: none !important;
+  }
+
+  /* ── Mobile Hero ── */
+  .hero {
+    padding: var(--space-10) 0;
+  }
+
+  .hero-grid {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: var(--space-8);
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-4);
+    background-color: rgba(35, 75, 59, 0.08);
+    color: var(--color-primary);
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    border-radius: var(--radius-full);
+    margin: 0 auto var(--space-5);
+  }
+
+  .hero-title {
+    font-size: var(--font-size-4xl);
+    line-height: var(--leading-tight);
+    margin-bottom: var(--space-5);
+  }
+
+  .hero-subtitle {
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+    max-width: 100%;
+    margin: 0 auto var(--space-8);
+    line-height: var(--leading-relaxed);
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    padding: var(--space-4);
+    font-size: var(--font-size-base);
+    justify-content: center;
+  }
+
+  .hero-visual {
+    height: 320px;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+  }
+
+  .hero-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero-decor {
+    background:
+      radial-gradient(circle at 80% 20%, rgba(121, 84, 58, 0.15), transparent 40%),
+      radial-gradient(circle at 20% 80%, rgba(35, 75, 59, 0.1), transparent 40%);
+  }
+
+  /* ── Mobile Sticky CTA ── */
+  .sticky-cta {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    padding: var(--space-4);
+    box-shadow: 0 -4px 20px -4px rgba(35, 75, 59, 0.2);
+    z-index: var(--z-fixed);
+    display: none;
+  }
+
+  .sticky-cta.visible {
+    display: block;
+    animation: slideUp var(--transition-base) ease-out;
+  }
+
+  .sticky-cta .btn {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: var(--space-4);
+    font-size: var(--font-size-base);
+    font-weight: 600;
+  }
+
+  .sticky-cta .btn:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+
+  /* ── Mobile Intro ── */
+  .intro-layout {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: var(--space-6);
+    background-color: var(--color-bg-alt);
+    border-radius: var(--radius-xl);
+    padding: var(--space-6);
+    margin: var(--space-8) 0;
+  }
+
+  .intro-content {
+    text-align: center;
+  }
+
+  .intro-image {
+    height: 250px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .intro-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* ── Mobile Course Grid ── */
+  .course-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+
+  .course-image {
+    height: 200px;
+  }
+
+  /* ── Mobile Features ── */
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+
+  .feature-item {
+    padding: var(--space-4);
+  }
+
+  .feature-icon {
+    width: 48px;
+    height: 48px;
+    font-size: var(--font-size-xl);
+    margin: 0 auto var(--space-3);
+  }
+
+  .feature-title {
+    font-size: var(--font-size-base);
+  }
+
+  .feature-desc {
+    font-size: var(--font-size-xs);
+  }
+
+  /* ── Mobile CTA ── */
+  .cta-section {
+    padding: var(--space-8);
+    border-radius: var(--radius-xl);
+    margin: var(--space-8) 0;
+  }
+
+  .cta-title {
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--space-3);
+  }
+
+  .cta-subtitle {
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--space-6);
+  }
+
+  .cta-actions {
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .cta-actions .btn {
+    width: 100%;
+  }
+
+  /* ── Mobile Course Cards ── */
+  .course-card {
+    height: auto;
+  }
+
+  /* ── Mobile Gallery ── */
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-3);
+  }
+
+  .gallery-item {
+    aspect-ratio: 1 / 1;
+    border-radius: var(--radius-lg);
+  }
+
+  /* ── Mobile Testimonials ── */
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+
+  .testimonial-card {
+    padding: var(--space-5);
+  }
+
+  /* ── Mobile Page Container ── */
+  .page-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 var(--space-4);
+  }
+
+  /* ── Mobile Course Detail ── */
+  .course-detail-layout {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+  }
+
+  .course-detail-image {
+    height: 300px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .course-detail-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .course-detail-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+  }
+
+  /* ── Mobile Registration ── */
+  .registration-layout {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+  }
+
+  .registration-form-card {
+    padding: var(--space-6);
+    border-radius: var(--radius-xl);
+  }
+
+  /* ── Mobile Contact ── */
+  .contact-layout {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+  }
+
+  .contact-map {
+    height: 250px;
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-bg-alt);
+    color: var(--color-text-light);
+    font-size: var(--font-size-base);
+  }
+
+  /* ── Mobile About ── */
+  .about-hero {
+    padding: var(--space-8);
+    border-radius: var(--radius-xl);
+    margin-bottom: var(--space-8);
+    text-align: center;
+  }
+
+  .about-hero h1 {
+    font-size: var(--font-size-3xl);
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .about-section {
+    padding: var(--space-6);
+    border-radius: var(--radius-lg);
+  }
+
+  .teacher-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+
+  .teacher-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .teacher-image {
+    height: 200px;
+  }
+
+  /* ── Mobile Typography ── */
+  h1 { font-size: var(--font-size-4xl); }
+  h2 { font-size: var(--font-size-3xl); }
+  h3 { font-size: var(--font-size-2xl); }
+
+  .section-title {
+    font-size: var(--font-size-3xl);
+  }
+
+  .section-badge {
+    font-size: var(--font-size-xs);
+    padding: var(--space-1) var(--space-3);
+  }
+
+  /* Mobile section header */
+  .section-header {
+    margin-bottom: var(--space-8);
+  }
+
+  /* Reveal animations - simpler on mobile */
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+  }
+
+  .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 13px;
+  }
+
+  .hero-title {
+    font-size: var(--font-size-3xl);
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mobile-nav-drawer {
+    width: 240px;
+  }
+
+  .cta-section {
+    padding: var(--space-6);
+  }
+
+  .about-hero h1 {
+    font-size: var(--font-size-2xl);
+  }
+}

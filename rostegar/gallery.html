@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>گالری تصاویر · آموزشگاه رستگار</title>
+<meta name="description" content="گالری تصاویر محیط آموزشگاه، فعالیت‌های کلاس‌های مختلف">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css">
+<link rel="stylesheet" href="css/design-system.css">
+<link rel="stylesheet" href="css/desktop.css">
+<link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">رفتن به محتوای اصلی</a>
+
+<!-- Header -->
+<header class="header">
+  <nav class="navbar container">
+    <a href="index.html" class="logo">
+      <div class="logo-icon"><i class="ti ti-school"></i></div>
+      <div class="logo-text">آموزشگاه رستگار</div>
+    </a>
+
+    <ul class="nav-menu desktop-only">
+      <li><a href="index.html" class="nav-link">صفحه اصلی</a></li>
+      <li><a href="about.html" class="nav-link">درباره ما</a></li>
+      <li><a href="courses.html" class="nav-link">دوره‌های آموزشی</a></li>
+      <li><a href="gallery.html" class="nav-link active">گالری تصاویر</a></li>
+      <li><a href="contact.html" class="nav-link">تماس با ما</a></li>
+    </ul>
+
+    <div class="nav-cta desktop-only">
+      <a href="registration.html" class="btn btn-secondary btn-lg">ثبت‌نام</a>
+    </div>
+
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="باز کردن منو">
+      <span></span>
+    </button>
+  </nav>
+</header>
+
+<!-- Mobile Navigation Drawer -->
+<div class="mobile-overlay" id="mobileOverlay"></div>
+<div class="mobile-nav-drawer" id="mobileNavDrawer">
+  <div class="mobile-nav-header">
+    <div class="mobile-nav-logo">
+      <div class="logo-icon" style="width:28px;height:28px;font-size:var(--font-size-lg);"><i class="ti ti-school"></i></div>
+      <div>آموزشگاه رستگار</div>
+    </div>
+    <button class="mobile-nav-close" id="mobileNavClose" aria-label="بستن منو"><i class="ti ti-x"></i></button>
+  </div>
+  <ul class="mobile-nav-menu">
+    <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link"><i class="ti ti-home"></i>صفحه اصلی</a></li>
+    <li class="mobile-nav-item"><a href="about.html" class="mobile-nav-link"><i class="ti ti-info-circle"></i>درباره ما</a></li>
+    <li class="mobile-nav-item"><a href="courses.html" class="mobile-nav-link"><i class="ti ti-book-open"></i>دوره‌های آموزشی</a></li>
+    <li class="mobile-nav-item"><a href="gallery.html" class="mobile-nav-link active"><i class="ti ti-image"></i>گالری تصاویر</a></li>
+    <li class="mobile-nav-item"><a href="contact.html" class="mobile-nav-link"><i class="ti ti-phone"></i>تماس با ما</a></li>
+  </ul>
+  <div class="mobile-nav-cta">
+    <a href="registration.html" class="btn btn-secondary">ثبت‌نام آنلاین</a>
+  </div>
+</div>
+
+<main id="main-content">
+
+  <!-- Page Header -->
+  <section class="about-hero" style="background: linear-gradient(135deg, var(--color-beige) 0%, var(--color-ivory) 100%);">
+    <div class="container">
+      <h1 style="color: var(--color-primary);">گالری تصاویر</h1>
+      <p style="color: var(--color-text-secondary);">لحظات زیبایی از محیط آموزشگاه و فعالیت‌های هنرجویان</p>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section-lg">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-badge">گالری تصاویر</div>
+        <h2 class="section-title">لحظات زیبایی از آموزشگاه</h2>
+        <p class="section-subtitle">محیط آموزشگاه، فعالیت‌های教育ی و کلاس‌های مختلف</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item reveal stagger-1">
+          <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=400&q=80" alt="محیط آموزشگاه">
+          <div class="gallery-caption">محیط آموزشگاه</div>
+        </div>
+        <div class="gallery-item reveal stagger-2">
+          <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abdac?w=400&q=80" alt="فعالیت‌های کودکان">
+          <div class="gallery-caption">فعالیت‌های آموزشی کودکان</div>
+        </div>
+        <div class="gallery-item reveal stagger-3">
+          <img src="https://images.unsplash.com/photo-1579783903743-ab52930e662b?w=400&q=80" alt="کلاس نقاشی">
+          <div class="gallery-caption">کلاس نقاشی و طراحی</div>
+        </div>
+        <div class="gallery-item reveal stagger-4">
+          <img src="https://images.unsplash.com/photo-1535238088117-921ff0b56e48?w=400&q=80" alt="کلاس رباتیک">
+          <div class="gallery-caption">کلاس‌های رباتیک</div>
+        </div>
+        <div class="gallery-item reveal stagger-1">
+          <img src="https://images.unsplash.com/photo-1544717330-2647a3f3e9e0?w=400&q=80" alt="کلاس زبان">
+          <div class="gallery-caption">کلاس‌های زبان</div>
+        </div>
+        <div class="gallery-item reveal stagger-2">
+          <img src="https://images.unsplash.com/photo-1517197189296-5ec2908a3f35?w=400&q=80" alt="فعالیت‌های فرهنگی">
+          <div class="gallery-caption">فعالیت‌های فرهنگی</div>
+        </div>
+        <div class="gallery-item reveal stagger-3">
+          <img src="https://images.unsplash.com/photo-1509062522248-10a3777e7e02?w=400&q=80" alt="کارگاه آموزشی">
+          <div class="gallery-caption">کارگاه‌های آموزشی</div>
+        </div>
+        <div class="gallery-item reveal stagger-4">
+          <img src="https://images.unsplash.com/photo-1522689955740-e4ce2906c41c?w=400&q=80" alt="میز紅色">
+          <div class="gallery-caption">مجتمع آموزشی</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo" style="color:#FFFFFF;">
+          <div class="logo-icon" style="background-color:#FFFFFF;color:var(--color-primary);"><i class="ti ti-school"></i></div>
+          <div class="logo-text">آموزشگاه رستگار</div>
+        </div>
+        <p class="footer-desc">محیطی امن، صمیمی و حرفه‌ای برای یادگیری، رشد فردی و پرورش توانایی‌های شما.</p>
+      </div>
+      <div class="footer-links-column">
+        <h3 class="footer-title">لینک‌های سریع</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">صفحه اصلی</a></li>
+          <li><a href="about.html">درباره ما</a></li>
+          <li><a href="courses.html">دوره‌های آموزشی</a></li>
+          <li><a href="contact.html">تماس با ما</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact-column">
+        <h3 class="footer-title">اطلاعات تماس</h3>
+        <ul class="footer-contact">
+          <li><i class="ti ti-map-pin"></i> شهریار، اندیشه، فاز یک، خیابان دنیامالی، کوچه گلنوش</li>
+          <li><i class="ti ti-phone"></i> شماره تماس (جایگزین با شماره واقعی)</li>
+          <li><i class="ti ti-clock"></i> ساعات کاری: اطلاعات قابل تکمیل</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© ۲۰۲۵ آموزشگاه رستگار. کلیه حقوق مادی و معنوی برای آموزشگاه رستگار محفوظ است.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
